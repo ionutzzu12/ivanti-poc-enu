@@ -7,3 +7,24 @@ A modern approach to mobile security, Ivanti Neurons for MDM provides unified en
 - Minimize hardware costs: By eliminating the need to maintain on-premise hardware, cloud-based services require zero footprint to manage.
 - High up-time and high availability.
 - Maximize existing investments: Re-allocate IT resources from hardware maintenance to more strategic tasks that add value to the business.
+
+## Next Steps
+
+Follow these next steps to get your environment ready.
+
+![](https://api.archbee.com/api/optimize/fNEeV2bO-J-V0NK1eH_VR/hdO1i-y94D2JfaAglFQeS_archbee-full-3-1-1.png)
+
+::::WorkflowBlock
+:::WorkflowBlockItem
+Step 1
+:::
+
+:::WorkflowBlockItem
+Step 2
+:::
+
+:::WorkflowBlockItem
+Step 3
+:::
+::::
+
