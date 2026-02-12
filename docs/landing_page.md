@@ -4,7 +4,7 @@
 
 A modern approach to mobile security, Ivanti Neurons for MDM provides unified endpoint management (UEM) solutions in a highly scalable, secure, and easy to update infrastructure that supports millions of devices around the world.
 
-\{\{If your language is unavailable}}
+{{If your language is unavailable}}
 
 ::::LinkArray{contentSource="CUSTOM"}
 :::LinkArrayItem{headerImage headerColor}
