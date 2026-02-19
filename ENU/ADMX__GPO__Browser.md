@@ -1,10 +1,8 @@
----
-title: ADMX (GPO) Browser
-createdAt: Wed Feb 11 2026 15:31:34 GMT+0200 (Eastern European Standard Time)
-updatedAt: Wed Feb 11 2026 15:31:34 GMT+0200 (Eastern European Standard Time)
----
+# ADMX (GPO) Browser
 
 Using ADMX (GPO) browser, you can view the GPO settings organized on the basis of the ADMX objects that exist in the tenant. You can search and view the default ADMX objects and also add (upload) custom ADMX files that provide an XML-based structure for defining the display of the GPO settings
+
+![](https://api.qa1.archbee.co/api/optimize/HEkQtFhyYgE4ZSdJlwxXe/DegjmQQ3yXrXusqZVGPBU_image.png)
 
 To upload custom ADMX object:
 
