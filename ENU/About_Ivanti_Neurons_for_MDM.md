@@ -1,5 +1,5 @@
 ---
-title: About Ivanti Neurons for MDM
+title: About Ivanti Neurons for MDM 2
 createdAt: Wed Feb 11 2026 15:31:27 GMT+0200 (Eastern European Standard Time)
 updatedAt: Wed Feb 11 2026 15:31:27 GMT+0200 (Eastern European Standard Time)
 ---
