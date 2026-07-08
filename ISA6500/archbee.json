@@ -5,11 +5,6 @@
     "assets": "assets",
     "docsTree": [
       {
-        "isCategory": false,
-        "path": "isa6500-hardware-guide.mdx",
-        "children": []
-      },
-      {
         "categoryName": "Revision History",
         "isCategory": false,
         "path": "isa-hardware/isa6500-hardware-guide-v1.0.mdx",
@@ -49,6 +44,11 @@
         "categoryName": "Standard Warnings and Compliance",
         "isCategory": false,
         "path": "isa-hardware/standard_warnings_and_compliance.mdx",
+        "children": []
+      },
+      {
+        "isCategory": false,
+        "path": "isa6500-hardware-guide.mdx",
         "children": []
       },
       {
