@@ -1,0 +1,8 @@
+{
+  "$schema": "https://api.archbee.com/git-config-schema",
+  "docsPath": "ISA8500/",
+  "structure": {
+    "assets": "assets",
+    "docsTree": []
+  }
+}
