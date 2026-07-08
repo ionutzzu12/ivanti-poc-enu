@@ -62,12 +62,12 @@ Description automatically generated" position="flex-start" size="40" initialPath
 
 **SYS LED**: Alerts operator of several states, as noted in the table below:
 
-| LED Color | Status | Description                                                                                                                               |
-| --------- | ------ | ----------------------------------------------------------------------------------------------------------------------------------------- |
-| Green     | ON     | System is operating normally.                                                                                                             |
-| NA        | OFF    | System is not ready, may indicate:<br />POST error; NMI error; Processor or terminator missing                                            |
-| Amber     | ON     | Critical condition, may indicate:<br />System fan failure; System temperature                                                             |
-| Amber     | Blink  | Non-critical condition, may indicate:<br />- Redundant power module failure<br />- Temperature and voltage issue<br />- Chassis intrusion |
+| LED Color | Status | Description                                                                                                                            |
+| --------- | ------ | -------------------------------------------------------------------------------------------------------------------------------------- |
+| Green     | ON     | System is operating normally.                                                                                                          |
+| NA        | OFF    | System is not ready, may indicate:&#xA;POST error; NMI error; Processor or terminator missing                                          |
+| Amber     | ON     | Critical condition, may indicate:&#xA;System fan failure; System temperature                                                           |
+| Amber     | Blink  | Non-critical condition, may indicate:&#xA;- Redundant power module failure&#xA;- Temperature and voltage issue&#xA;- Chassis intrusion |
 
 <Image src="https://archbee-image-uploads-qa.s3.amazonaws.com/yzXkkCTORWlcwRG_AVHKZ/ybyM73fT168k1YRSV_Iqj_nmibutton.png" alt="A picture containing graphical user interface
 
@@ -95,7 +95,7 @@ HDD: Indicates NVMe drive activity when flashing.
 
 | LED Color   | Status | Description                    |
 | ----------- | ------ | ------------------------------ |
-| Green<br /> | ON     | HDD locate                     |
+| Green&#xA;  | ON     | HDD locate                     |
 |             | Blink  | HDD access                     |
 | Amber       | On     | HDD fault                      |
 | Green/Amber | Blink  | HDD rebuilding                 |
@@ -112,21 +112,21 @@ Power: Indicates power is being supplied to the system power supply. This LED sh
 
 **RoT/BMC/Auth LEDs**
 
-|                                                                                 | ID LED                                             | SYS LED                                             |
-| ------------------------------------------------------------------------------- | -------------------------------------------------- | --------------------------------------------------- |
-| EC FW is broken or not exit                                                     | Off                                                | Off                                                 |
-| Authenticating Images                                                           | Off                                                | Off                                                 |
-| Recovering BMC Active Flash                                                     | Blinks Blue, 4 times per second                    | Blinks Green, 4 times per second                    |
-| Recovering BIOS Active Flash                                                    | Blinks Blue, 4 times per second                    | Blinks Green, 4 times per second                    |
-| BMC : AUTH pass after doing recovery<br />BIOS : AUTH pass after doing recovery | Off                                                | Off                                                 |
-| BMC : AUTH pass after doing recovery<br />BIOS : AUTH pass                      | Off                                                | Off                                                 |
-| BMC : AUTH pass<br />BIOS : AUTH pass after doing recovery                      | Off                                                | Off                                                 |
-| BMC : AUTH Fail                                                                 | Blinks Blue, 1 time per second                     | Blinks Green, 1 time per second                     |
-| BIOS : AUTH fail(                                                               | Blinks Blue, 1 time per second                     | Blinks Amber, 1 time per second                     |
-| BMC : AUTH fail after doing recovery                                            | Blinks Blue, 2 times per second<br />\[ON OFF OFF] | Blinks Green, 2 times per second<br />\[ON OFF OFF] |
-| BIOS : AUTH fail after doing recovery                                           | Blinks Blue, 2 times per second<br />\[ON OFF OFF] | Blinks Amber, 2 times per second<br />\[ON OFF OFF] |
-| BMC : AUTH fail                                                                 | Blinks Blue, 2 times per second<br />\[ON OFF OFF] | Blinks Green, 2 times per second<br />\[ON OFF OFF] |
-| BIOS : AUTH fail                                                                | Blinks Blue, 2 times per second<br />\[ON OFF OFF] | Blinks Amber, 2 times per second<br />\[ON OFF OFF] |
+|                                                                                | ID LED                                            | SYS LED                                            |
+| ------------------------------------------------------------------------------ | ------------------------------------------------- | -------------------------------------------------- |
+| EC FW is broken or not exit                                                    | Off                                               | Off                                                |
+| Authenticating Images                                                          | Off                                               | Off                                                |
+| Recovering BMC Active Flash                                                    | Blinks Blue, 4 times per second                   | Blinks Green, 4 times per second                   |
+| Recovering BIOS Active Flash                                                   | Blinks Blue, 4 times per second                   | Blinks Green, 4 times per second                   |
+| BMC : AUTH pass after doing recovery&#xA;BIOS : AUTH pass after doing recovery | Off                                               | Off                                                |
+| BMC : AUTH pass after doing recovery&#xA;BIOS : AUTH pass                      | Off                                               | Off                                                |
+| BMC : AUTH pass&#xA;BIOS : AUTH pass after doing recovery                      | Off                                               | Off                                                |
+| BMC : AUTH Fail                                                                | Blinks Blue, 1 time per second                    | Blinks Green, 1 time per second                    |
+| BIOS : AUTH fail(                                                              | Blinks Blue, 1 time per second                    | Blinks Amber, 1 time per second                    |
+| BMC : AUTH fail after doing recovery                                           | Blinks Blue, 2 times per second&#xA;\[ON OFF OFF] | Blinks Green, 2 times per second&#xA;\[ON OFF OFF] |
+| BIOS : AUTH fail after doing recovery                                          | Blinks Blue, 2 times per second&#xA;\[ON OFF OFF] | Blinks Amber, 2 times per second&#xA;\[ON OFF OFF] |
+| BMC : AUTH fail                                                                | Blinks Blue, 2 times per second&#xA;\[ON OFF OFF] | Blinks Green, 2 times per second&#xA;\[ON OFF OFF] |
+| BIOS : AUTH fail                                                               | Blinks Blue, 2 times per second&#xA;\[ON OFF OFF] | Blinks Amber, 2 times per second&#xA;\[ON OFF OFF] |
 
 ## Management Port LEDs
 
@@ -134,26 +134,26 @@ The management port has two LEDs. The yellow LED indicates activity, while the l
 
 <Image src="https://archbee-image-uploads-qa.s3.amazonaws.com/yzXkkCTORWlcwRG_AVHKZ/_irI7QJJeNo-GUVpZMbMY_systemoverview18.png" position="flex-start" size="40" initialPath="../resources/images/isa8500-hardware-guide/system_overview_18.png" githubPath="ISA8500/resources/images/isa8500-hardware-guide/system_overview_18.png" showCaption="false"></Image>
 
-| LED           | Name                                  | Color       | Status | Description                                    |
-| ------------- | ------------------------------------- | ----------- | ------ | ---------------------------------------------- |
-| 1             | 1 GbE Speed LED<br /><br />           | Yellow      | On     | 1 Gbps data rate                               |
-|               |                                       | Green       | On     | 100 Mbps data rate                             |
-|               |                                       | N/A         | Off    | 10 Mbps data rate                              |
-| 2<br /><br /> | 1 GbE Link / Activity LED<br /><br /> | Green<br /> | On     | Link between system and network or no access   |
-|               |                                       |             | Blink  | Data transmission or reception is occurring    |
-|               |                                       | N/A         | Off    | No data transmission or reception is occurring |
+| LED         | Name                                | Color      | Status | Description                                    |
+| ----------- | ----------------------------------- | ---------- | ------ | ---------------------------------------------- |
+| 1           | 1 GbE Speed LED&#xA;&#xA;           | Yellow     | On     | 1 Gbps data rate                               |
+|             |                                     | Green      | On     | 100 Mbps data rate                             |
+|             |                                     | N/A        | Off    | 10 Mbps data rate                              |
+| 2&#xA;&#xA; | 1 GbE Link / Activity LED&#xA;&#xA; | Green&#xA; | On     | Link between system and network or no access   |
+|             |                                     |            | Blink  | Data transmission or reception is occurring    |
+|             |                                     | N/A        | Off    | No data transmission or reception is occurring |
 
 ## INT and EXT Port LEDs
 
 Two LAN ports are located on the NIC card. Each Ethernet port has two LEDs.
 
-| LED           | Name                        | Color  | Status          | Description                             |
-| ------------- | --------------------------- | ------ | --------------- | --------------------------------------- |
-| 1             | 10 GbE Activity LED<br />   | N/A    | Off             | No link                                 |
-|               |                             | Green  | Blinking On/Off | Actively transmitting or receiving data |
-| 2<br /><br /> | <br />10 GbE Link LED<br /> | N/A    | Off             | No link                                 |
-|               |                             | Yellow | On              | Linked at slower than 10 Gbps           |
-|               |                             | Green  | On              | 10 Gbps link speed                      |
+| LED         | Name                      | Color  | Status          | Description                             |
+| ----------- | ------------------------- | ------ | --------------- | --------------------------------------- |
+| 1           | 10 GbE Activity LED&#xA;  | N/A    | Off             | No link                                 |
+|             |                           | Green  | Blinking On/Off | Actively transmitting or receiving data |
+| 2&#xA;&#xA; | &#xA;10 GbE Link LED&#xA; | N/A    | Off             | No link                                 |
+|             |                           | Yellow | On              | Linked at slower than 10 Gbps           |
+|             |                           | Green  | On              | 10 Gbps link speed                      |
 
 ## Air Flow Direction
 
