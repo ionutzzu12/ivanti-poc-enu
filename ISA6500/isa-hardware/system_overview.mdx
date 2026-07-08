@@ -1,0 +1,410 @@
+---
+title: System Overview
+docTags: 
+createdAt: Wed Jul 08 2026 11:32:25 GMT+0000 (Coordinated Universal Time)
+---
+
+## Introduction
+
+The ISA6500 features a unique and highly optimized design for low wattage processor platforms. It is equipped with a high-efficiency low noise power supply. High-performance fans provide ample optimized cooling.
+
+ISA6500 - Front View
+
+<Image src="https://api.archbee.com/api/optimize/fNEeV2bO-J-V0NK1eH_VR/r3SlOl3SCmTaWDanjhlwU_isa6500hw.png" position="flex-start" size="40" initialPath="../resources/images/isa6500-hardware-guide-v1.0/isa6500hw.png" githubPath="ISA6500/resources/images/isa6500-hardware-guide-v1.0/isa6500hw.png" width="1215" height="124" darkWidth="1215" darkHeight="124" showCaption="false"></Image>
+
+ISA6500 - Rear View
+
+<Image src="https://api.archbee.com/api/optimize/fNEeV2bO-J-V0NK1eH_VR/hV6ShAGJEnvs12lCm_QIh_isa6500hwrear.png" position="flex-start" size="40" initialPath="../resources/images/isa6500-hardware-guide-v1.0/isa6500hw_rear.png" githubPath="ISA6500/resources/images/isa6500-hardware-guide-v1.0/isa6500hw_rear.png" width="1903" height="210" darkWidth="1903" darkHeight="210" showCaption="false"></Image>
+
+<hint type="info">
+  For added system security, the USB ports have been disabled.
+</hint>
+
+## LED Control Panel
+
+The control panel located on the front of the ISA6500 chassis includes power control buttons and status LEDs. This section describes the LED indicators and the appropriate responses.
+
+<Image src="https://api.archbee.com/api/optimize/fNEeV2bO-J-V0NK1eH_VR/5kb-JADDduYSKSedsRUT-_led-panel.png" position="flex-start" size="40" initialPath="../resources/images/isa6500-hardware-guide-v1.0/led-panel.png" githubPath="ISA6500/resources/images/isa6500-hardware-guide-v1.0/led-panel.png" width="1158" height="196" darkWidth="1158" darkHeight="196" showCaption="false"></Image>
+
+### Control Panel Buttons
+
+The control panel includes a power on/off button and a reset button.
+
+<Image src="https://api.archbee.com/api/optimize/fNEeV2bO-J-V0NK1eH_VR/t0-TGL6KSX6UMDKMqN1v3_isa6500hwpwr.png" position="flex-start" size="40" initialPath="../resources/images/isa6500-hardware-guide-v1.0/isa6500hw_pwr.png" githubPath="ISA6500/resources/images/isa6500-hardware-guide-v1.0/isa6500hw_pwr.png" width="165" height="157" darkWidth="165" darkHeight="157" showCaption="false"></Image>
+
+**Power button**: The main power switch is used to apply or remove power from the power supply to the server system. To turn off the device, press the power button for four seconds. You must unplug the system before servicing.
+
+<Image src="https://api.archbee.com/api/optimize/fNEeV2bO-J-V0NK1eH_VR/48PweMyCd7R0adb1eyX-x_isa6500hwreset.png" position="flex-start" size="40" initialPath="../resources/images/isa6500-hardware-guide-v1.0/isa6500hw_reset.png" githubPath="ISA6500/resources/images/isa6500-hardware-guide-v1.0/isa6500hw_reset.png" width="154" height="160" darkWidth="154" darkHeight="160" showCaption="false"></Image>
+
+**Reset button**: The reset button is used to reboot the system.
+
+### Control Panel LEDs
+
+The control panel displays five LEDs to monitor the system.
+
+<Image src="https://api.archbee.com/api/optimize/fNEeV2bO-J-V0NK1eH_VR/U8OB_lHskEa2PW22t3acC_isa6500hwcaution.png" position="flex-start" size="40" initialPath="../resources/images/isa6500-hardware-guide-v1.0/isa6500hw_caution.png" githubPath="ISA6500/resources/images/isa6500-hardware-guide-v1.0/isa6500hw_caution.png" width="178" height="256" darkWidth="178" darkHeight="256" showCaption="false"></Image>
+
+**Information LED**: Alerts operator of several states, as noted in the table below:
+
+<table isTableHeaderOn="true" columnWidths="330,331">
+  <tr>
+    <td>
+      Status
+    </td>
+    <td>
+      Description
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Red OFF
+    </td>
+    <td>
+      Indicates system is operating normally.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Red ON
+    </td>
+    <td>
+      Indicates critical condition, may include:
+      \- System fan failure
+      \- System temperature
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Red and Blink
+    </td>
+    <td>
+      Indicates non-critical condition, may include:
+      \- Temperature and voltage issue
+    </td>
+  </tr>
+</table>
+
+<Image src="https://api.archbee.com/api/optimize/fNEeV2bO-J-V0NK1eH_VR/BVZ9Bt6x36swLo7wHA6PJ_isa6500hwnl1.png" position="flex-start" size="40" initialPath="../resources/images/isa6500-hardware-guide-v1.0/isa6500hw_nl1.png" githubPath="ISA6500/resources/images/isa6500-hardware-guide-v1.0/isa6500hw_nl1.png" width="183" height="286" darkWidth="183" darkHeight="286" showCaption="false"></Image>
+
+**NIC1**: Associated with the Management port. It indicates network activity when flashing.
+
+<table isTableHeaderOn="true" columnWidths="220,220,221">
+  <tr>
+    <td>
+      LED
+    </td>
+    <td>
+      Color
+    </td>
+    <td>
+      Description
+    </td>
+  </tr>
+  <tr>
+    <td>
+      On
+    </td>
+    <td>
+      Blue
+    </td>
+    <td>
+      Link between system and network or no access.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Blink
+    </td>
+    <td>
+      Blue
+    </td>
+    <td>
+      Data transmission or receiving is occurring
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Off
+    </td>
+    <td>
+      N/A
+    </td>
+    <td>
+      No data transmission or receiving is occurring
+    </td>
+  </tr>
+</table>
+
+<Image src="https://api.archbee.com/api/optimize/fNEeV2bO-J-V0NK1eH_VR/mDteSv3FpNiJOfQX0Pzft_isa6500hwnl2.png" position="flex-start" size="40" initialPath="../resources/images/isa6500-hardware-guide-v1.0/isa6500hw_nl2.png" githubPath="ISA6500/resources/images/isa6500-hardware-guide-v1.0/isa6500hw_nl2.png" width="156" height="295" darkWidth="156" darkHeight="295" showCaption="false"></Image>
+
+**NIC2**: Unused. Will always be off.
+
+<Image src="https://api.archbee.com/api/optimize/fNEeV2bO-J-V0NK1eH_VR/umqMT9kzIJLtdi1Pl73rI_isa6500hwhdd.png" position="flex-start" size="40" initialPath="../resources/images/isa6500-hardware-guide-v1.0/isa6500hw_hdd.png" githubPath="ISA6500/resources/images/isa6500-hardware-guide-v1.0/isa6500hw_hdd.png" width="99" height="211" darkWidth="99" darkHeight="211" showCaption="false"></Image>
+
+**HDD**: Indicates SATA drive activity when flashing.
+
+- Amber and ON: indicates HDD locate.
+- Amber, ON and Blink: indicates HDD access.
+- Off: No HDD access or no HDD fault.
+
+<Image src="https://api.archbee.com/api/optimize/fNEeV2bO-J-V0NK1eH_VR/fF2thfoyE-kRAFUbYbs56_isa6500hwpwrled.png" position="flex-start" size="40" initialPath="../resources/images/isa6500-hardware-guide-v1.0/isa6500hw_pwrled.png" githubPath="ISA6500/resources/images/isa6500-hardware-guide-v1.0/isa6500hw_pwrled.png" width="177" height="211" darkWidth="177" darkHeight="211" showCaption="false"></Image>
+
+**Power**: Indicates power is being supplied to the system power supply. This LED should be illuminated when the system is operating.
+
+- On and Blue: System is powered on.
+- Blue and Blink: System is in sleep mode.
+- Off: System is powered off or in hibernate mode.
+
+## Management Port LEDs
+
+The management port has two LEDs..
+
+<Image src="https://api.archbee.com/api/optimize/fNEeV2bO-J-V0NK1eH_VR/a9zjELXsjRRHOD5bEr6ZV_isa6500hwports.png" size="50" width="880" height="331" isUploading="false" darkWidth="880" darkHeight="331" position="flex-start" showCaption="false"></Image>
+
+<table isTableHeaderOn="true" columnWidths="132,132,132,132,133">
+  <tr>
+    <td>
+      LED
+    </td>
+    <td>
+      Name
+    </td>
+    <td>
+      Color
+    </td>
+    <td>
+      Status
+    </td>
+    <td>
+      Description
+    </td>
+  </tr>
+  <tr>
+    <td>
+      1
+    </td>
+    <td>
+      1 GbE Speed LED
+    </td>
+    <td>
+      Yellow
+    </td>
+    <td>
+      On
+    </td>
+    <td>
+      1 Gbps data rate
+    </td>
+  </tr>
+  <tr>
+    <td>
+    </td>
+    <td>
+    </td>
+    <td>
+      Green
+    </td>
+    <td>
+      On
+    </td>
+    <td>
+      100 Mbps data rate
+    </td>
+  </tr>
+  <tr>
+    <td>
+    </td>
+    <td>
+    </td>
+    <td>
+      N/A
+    </td>
+    <td>
+      Off
+    </td>
+    <td>
+      10 Mbps data rate
+    </td>
+  </tr>
+  <tr>
+    <td>
+      2
+    </td>
+    <td>
+      1 GbE Link / Activity LED
+    </td>
+    <td>
+      Green
+    </td>
+    <td>
+      On
+    </td>
+    <td>
+      Link between system and network or no access
+    </td>
+  </tr>
+  <tr>
+    <td>
+    </td>
+    <td>
+    </td>
+    <td>
+    </td>
+    <td>
+      Blink
+    </td>
+    <td>
+      Data transmission or reception is occurring
+    </td>
+  </tr>
+  <tr>
+    <td>
+    </td>
+    <td>
+    </td>
+    <td>
+      N/A
+    </td>
+    <td>
+      Off
+    </td>
+    <td>
+      No data transmission or reception is occurring
+    </td>
+  </tr>
+</table>
+
+## INT and EXT Port LEDs
+
+Two LAN ports are located on the NIC card. Each Ethernet port has two LEDs.
+
+<table isTableHeaderOn="true" columnWidths="132,132,132,132,133">
+  <tr>
+    <td>
+      LED
+    </td>
+    <td>
+      Name
+    </td>
+    <td>
+      Color
+    </td>
+    <td>
+      Status
+    </td>
+    <td>
+      Description
+    </td>
+  </tr>
+  <tr>
+    <td>
+      1
+    </td>
+    <td>
+      10 GbE Activity LED
+    </td>
+    <td>
+      N/A
+    </td>
+    <td>
+      Off
+    </td>
+    <td>
+      No link
+    </td>
+  </tr>
+  <tr>
+    <td>
+    </td>
+    <td>
+    </td>
+    <td>
+      Green
+    </td>
+    <td>
+      Blinking On/Off
+    </td>
+    <td>
+      Actively transmitting or receiving data
+    </td>
+  </tr>
+  <tr>
+    <td>
+      2
+    </td>
+    <td>
+      10 GbE Link LED
+    </td>
+    <td>
+      N/A
+    </td>
+    <td>
+      Off
+    </td>
+    <td>
+      No link
+    </td>
+  </tr>
+  <tr>
+    <td>
+    </td>
+    <td>
+    </td>
+    <td>
+      Yellow
+    </td>
+    <td>
+      On
+    </td>
+    <td>
+      Linked at slower than 10 Gbps
+    </td>
+  </tr>
+  <tr>
+    <td>
+    </td>
+    <td>
+    </td>
+    <td>
+      Green
+    </td>
+    <td>
+      On
+    </td>
+    <td>
+      10 Gbps link speed
+    </td>
+  </tr>
+</table>
+
+## Air Flow Direction
+
+The following table gives the air flow direction of the power supply fan and internal CPU fan.
+
+<table isTableHeaderOn="true" columnWidths="330,331">
+  <tr>
+    <td>
+      Component
+    </td>
+    <td>
+      Air Flow Direction
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Power Supply Fan
+    </td>
+    <td>
+      To the rear of the unit
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Internal CPU Fan
+    </td>
+    <td>
+      To the rear of the unit
+    </td>
+  </tr>
+</table>
+

@@ -3,6 +3,65 @@
   "docsPath": "ISA6500/",
   "structure": {
     "assets": "assets",
-    "docsTree": []
+    "docsTree": [
+      {
+        "isCategory": false,
+        "path": "isa6500-hardware-guide.mdx",
+        "children": []
+      },
+      {
+        "categoryName": "Revision History",
+        "isCategory": false,
+        "path": "isa-hardware/isa6500-hardware-guide-v1.0.mdx",
+        "children": []
+      },
+      {
+        "categoryName": "Package Contents",
+        "isCategory": false,
+        "path": "isa-hardware/packagecontent.mdx",
+        "children": []
+      },
+      {
+        "categoryName": "System Overview",
+        "isCategory": false,
+        "path": "isa-hardware/system_overview.mdx",
+        "children": []
+      },
+      {
+        "categoryName": "Hardware Specifications",
+        "isCategory": false,
+        "path": "isa-hardware/hardware_specifications.mdx",
+        "children": []
+      },
+      {
+        "categoryName": "Console and Initial Configuration",
+        "isCategory": false,
+        "path": "isa-hardware/console_and_initial_configuration.mdx",
+        "children": []
+      },
+      {
+        "categoryName": "Installation",
+        "isCategory": false,
+        "path": "isa-hardware/installation.mdx",
+        "children": []
+      },
+      {
+        "categoryName": "Standard Warnings and Compliance",
+        "isCategory": false,
+        "path": "isa-hardware/standard_warnings_and_compliance.mdx",
+        "children": []
+      },
+      {
+        "isCategory": false,
+        "path": "your-search-for-returned-results.mdx",
+        "children": []
+      },
+      {
+        "categoryName": "Shadow Docs",
+        "isCategory": true,
+        "children": [],
+        "isShadowDocs": true
+      }
+    ]
   }
 }
