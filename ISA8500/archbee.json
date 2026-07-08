@@ -5,11 +5,6 @@
     "assets": "assets",
     "docsTree": [
       {
-        "isCategory": false,
-        "path": "isa8500-hardware-guide.mdx",
-        "children": []
-      },
-      {
         "categoryName": "Revision History",
         "isCategory": false,
         "path": "isa-hardware/isa8500-hardware-guide-v1.0.mdx",
@@ -53,14 +48,13 @@
       },
       {
         "isCategory": false,
-        "path": "your-search-for-returned-results.mdx",
+        "path": "isa8500-hardware-guide.mdx",
         "children": []
       },
       {
-        "categoryName": "Shadow Docs",
-        "isCategory": true,
-        "children": [],
-        "isShadowDocs": true
+        "isCategory": false,
+        "path": "your-search-for-returned-results.mdx",
+        "children": []
       }
     ]
   }
