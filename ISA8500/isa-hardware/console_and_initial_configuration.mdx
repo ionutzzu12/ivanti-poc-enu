@@ -1,0 +1,86 @@
+---
+title: Console and Initial Configuration
+docTags: 
+createdAt: Wed Jul 08 2026 11:37:00 GMT+0000 (Coordinated Universal Time)
+---
+
+## Accessing ISA8500 Serial Console through Laptop
+
+1. Get the USB-to-DB9 (female) cable.
+
+<Image src="https://api.archbee.com/api/optimize/fNEeV2bO-J-V0NK1eH_VR/VoV1SBfi2BIjOYoxAFeUV_laptop.png" position="flex-start" size="40" initialPath="../resources/images/isa8500-hardware-guide/laptop.png" githubPath="ISA8500/resources/images/isa8500-hardware-guide/laptop.png" width="362" height="142" darkWidth="362" darkHeight="142" showCaption="false"></Image>
+
+2. Connect the USB port to the laptop and serial DB9 female port to the ISA8500 console.
+3. Configure a terminal emulation utility running on the laptop, such as HyperTerminal or PuTTY, to use these serial connection parameters: 9600 bits per second, 8-bit no parity (8N1), 1 stop bit, no flow control.
+4. Connect a network cable from the INT port (internal port) on the appliance to a switch port.
+
+<hint type="info">
+  To find your COM port in Windows, go to Start > Search > Device Manager > Ports (COM & LPT) > USB Serial Port (COM#).
+</hint>
+
+## Accessing ISA8500 Console through Console Server
+
+1. Get the RJ45-to-DB9 serial cable.
+
+<Image src="https://api.archbee.com/api/optimize/fNEeV2bO-J-V0NK1eH_VR/8BKfoudvINYSttw5g2oNo_consoleandinitialconfiguration1.png" position="flex-start" size="40" indent="1" initialPath="../resources/images/isa8500-hardware-guide/console_and_initial_configuration_1.png" githubPath="ISA8500/resources/images/isa8500-hardware-guide/console_and_initial_configuration_1.png" width="1102" height="670" darkWidth="1102" darkHeight="670" showCaption="false"></Image>
+
+2. Connect the RJ45 port in RJ45-to-DB9 serial cable to the console server and serial DB9 female to the ISA8500 console (DB9 male).
+3. Configure a terminal emulation utility running on the laptop, such as HyperTerminal or PuTTY, connect using telnet to the console server IP and the port number it is connected to.
+4. Connect a network cable from the INT port (internal port) on the appliance to a switch port.
+
+## Powering On the System
+
+Do this:
+
+1. Connect the AC power cord from the power supply to a power source.
+2. Press the power switch on the front of the system.
+
+<hint type="info">
+  After powering off a power supply, wait at least 60 seconds before turning it back on. After powering on a power supply, wait at least 60 seconds before turning it off.
+</hint>
+
+After the power supply is powered on, it can take up to 60 seconds for status indicators—such as the status LEDs on the power supply and the show chassis command display—to indicate that the power supply is functioning normally. Ignore error indicators that appear during the first 60 seconds.
+
+## Configuring Basic Settings
+
+When you bring up a new ISA8500 for the first time, you need to enter basic network and machine information through the console to make it accessible to the network. After entering these settings, you can continue configuring the ISA8500 through the administrator Web console.
+
+The installation process may take up to 30 minutes.
+
+Do this to perform basic setup:
+
+1. In Serial com console, enter **y** to select the appliance as a stand-alone node.
+2. Enter **y** to accept the license terms (or enter r to read the license first).
+3. Follow the directions in the console, and enter the machine information for which you are prompted, including the following:
+
+- Internal port IP address (you configure the external port through the administrator Web console after initial configuration)
+- Internal port network mask
+- Internal port default gateway address
+- Internal port default VLAN (optional)
+- Primary DNS server address
+- Admin username
+- Admin password
+- REST API access (for this administrator)
+- Digital certificate
+  - Common name (example: secure.company.com)
+  - Organization name (example: Company Inc.)
+- Register Ivanti Connect Secure with Ivanti Neurons for Secure Access
+
+After you perform the basic setup, you are ready to license the software, verify accessibility, and complete the configuration process through the ISA8500 administrator Web console.
+
+## Accessing the Web Admin Interface
+
+1. Launch a web browser from a laptop that is network connected.
+2. Point the browser at the same IP address that was assigned to the internal port followed by /admin (for example, https\://a.b.c.d/admin).
+3. When prompted with the security alert to proceed without a signed certificate, click Yes. When the administrator sign-in page appears, you have successfully connected your device to the network.
+4. On the sign-in page, enter the administrator username and password you created earlier. Then click Sign In. The administrator Web console opens to the Overview page.
+
+## Licensing the System
+
+After you install the device and perform basic setup, you are ready to license it.
+
+To license your device, follow instructions received in an email from Ivanti. For more information, contact [Support Center](https://forums.ivanti.com/s/contactsupport?language=en_US).
+
+The device uses the common machine and organization names to create a self-signed digital certificate for use during product evaluation and initial setup.
+
+We strongly recommend that you import a signed digital certificate from a trusted certificate authority (CA) before you deploy the device for production use.
