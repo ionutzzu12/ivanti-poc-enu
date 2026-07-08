@@ -1,14 +1,14 @@
 ---
 title: Console and Initial Configuration
 docTags: 
-createdAt: Wed Jul 08 2026 15:24:00 GMT+0300 (Eastern European Summer Time)
+createdAt: Wed Jul 08 2026 15:31:28 GMT+0300 (Eastern European Summer Time)
 ---
 
 ## Accessing ISA6500 Serial Console through Laptop
 
 1. Get the USB-to-DB9 (female) cable (this cable is not provided by Ivanti).
 
-<Image src="https://api.archbee.com/api/optimize/fNEeV2bO-J-V0NK1eH_VR/joXyIOY2poImhHHca8TjD_laptop.png" position="flex-start" size="40" initialPath="../resources/images/isa6500-hardware-guide-v1.0/laptop.png" githubPath="ISA6500/resources/images/isa6500-hardware-guide-v1.0/laptop.png" width="362" height="142" darkWidth="362" darkHeight="142" showCaption="false"></Image>
+<Image src="https://archbee-image-uploads-qa.s3.amazonaws.com/yzXkkCTORWlcwRG_AVHKZ/MUhs9W3y5luiTz3xeYE91_laptop.png" position="flex-start" size="40" initialPath="../resources/images/isa6500-hardware-guide-v1.0/laptop.png" githubPath="ISA6500/resources/images/isa6500-hardware-guide-v1.0/laptop.png" showCaption="false"></Image>
 
 2. Connect the USB port to the laptop and serial DB9 female port to the ISA6500 console.
 3. Configure a terminal emulation utility running on the laptop, such as HyperTerminal or PuTTY, to use these serial connection parameters: 9600 bits per second, 8-bit no parity (8N1), 1 stop bit, no flow control.
@@ -22,7 +22,7 @@ createdAt: Wed Jul 08 2026 15:24:00 GMT+0300 (Eastern European Summer Time)
 
 1. Get the RJ45-to-DB9 serial cable.
 
-<Image src="https://api.archbee.com/api/optimize/fNEeV2bO-J-V0NK1eH_VR/1Oh0ZO9wxnXJAISzDzOJx_consoleandinitialconfiguration1.png" position="flex-start" size="40" initialPath="../resources/images/isa6500-hardware-guide-v1.0/console_and_initial_configuration_1.png" githubPath="ISA6500/resources/images/isa6500-hardware-guide-v1.0/console_and_initial_configuration_1.png" width="1102" height="670" darkWidth="1102" darkHeight="670" showCaption="false"></Image>
+<Image src="https://archbee-image-uploads-qa.s3.amazonaws.com/yzXkkCTORWlcwRG_AVHKZ/6ekobku-eqVXXJOgFZnA5_consoleandinitialconfiguration1.png" position="flex-start" size="40" initialPath="../resources/images/isa6500-hardware-guide-v1.0/console_and_initial_configuration_1.png" githubPath="ISA6500/resources/images/isa6500-hardware-guide-v1.0/console_and_initial_configuration_1.png" showCaption="false"></Image>
 
 2. Connect the RJ45 port in RJ45-to-DB9 serial cable to the console server and serial DB9 female to the ISA6500 console (DB9 male).
 3. Configure a terminal emulation utility running on the laptop, such as HyperTerminal or PuTTY, connect using telnet to the console server IP and the port number it is connected to.
@@ -71,7 +71,7 @@ After you perform the basic setup, you are ready to license the software, verify
 ## Accessing the Web Admin Interface
 
 1. Launch a web browser from a laptop that is network connected.
-2. Point the browser at the same IP address that was assigned to the internal port followed by /admin (for example, [https://a.b.c.d/admin](https://a.b.c.d/admin)).
+2. Point the browser at the same IP address that was assigned to the internal port followed by /admin (for example, https\://a.b.c.d/admin).
 3. When prompted with the security alert to proceed without a signed certificate, click Yes. When the administrator sign-in page appears, you have successfully connected your device to the network.
 4. On the sign-in page, enter the administrator username and password you created earlier. Then click Sign In. The administrator Web console opens to the Overview page.
 
