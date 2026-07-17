@@ -1,0 +1,23 @@
+{
+  "sites": [
+    {
+      "docsPath": "./ENU"
+    }
+  ],
+  "docsPath": "docs/",
+  "structure": {
+    "docsTree": [
+      {
+        "path": "a.mdx",
+        "children": []
+      },
+      {
+        "categoryName": "Shadow Docs",
+        "isCategory": true,
+        "children": [],
+        "isShadowDocs": true
+      }
+    ],
+    "assets": "assets/"
+  }
+}
